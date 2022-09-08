@@ -28,10 +28,12 @@
             </div>
 
         </div>
+       
     </div>
 </template>
 
 <script>
+import Footer from './Footer.vue';
 export default {
     name: "Sidebar",
     data() {
@@ -52,11 +54,10 @@ export default {
                     name: "Contact Us",
                     to: "/contact-us"
                 },
-
             ]
-        }
-    }
-
+        };
+    },
+    components: { Footer }
 }
 </script>
 <style scoped>
